@@ -10,13 +10,7 @@ import ForgotPassword from "./components/ForgotPassword"
 import UpdateProfile from "./components/UpdateProfile"
 
 
-class App extends React.component{
-  componentDidMount(){
-    fetch('/api/games')
-      .then(res => res.json())
-      .then(games => console.log(games));
-  }
-  render(){
+function App(){
     return(
       <Container
         className="d-flex align-items-center justify-content-center"
@@ -38,7 +32,6 @@ class App extends React.component{
       </Container>
     );
   }
-}
 
 
 export default App
